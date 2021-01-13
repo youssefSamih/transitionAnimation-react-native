@@ -56,7 +56,12 @@
     /* Experimental Options */
     // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "paths": {
+      "react-native-redash/lib/module/v1": [
+        "./node_modules/react-native-redash/lib/typescript/v1/index.d.ts"
+      ]
+    }
   },
   "exclude": [
     "node_modules",

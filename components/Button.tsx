@@ -21,7 +21,7 @@ const Button = ({primary, onPress, label}: ButtonProps) => {
           <Text
             style={[
               styles.label,
-              {color, fontFamily: fonts['SFProText-Semibold'], fontSize: 17},
+              {color, fontFamily: fonts['SFProText-Semibold']},
             ]}>
             {label}
           </Text>
