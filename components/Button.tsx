@@ -8,7 +8,9 @@ interface ButtonProps {
   primary?: boolean;
   onPress: () => void;
 }
-
+const fonts = {
+  'SFProText-Semibold': require('../assets/fonts/SF-Pro-Text-Semibold.otf'),
+};
 const Button = ({primary, onPress, label}: ButtonProps) => {
   const color = primary ? 'white' : undefined;
   const backgroundColor = primary ? '#3884ff' : undefined;
@@ -16,7 +18,11 @@ const Button = ({primary, onPress, label}: ButtonProps) => {
     <RectButton onPress={onPress}>
       <SafeAreaView style={{backgroundColor}} accessible>
         <View style={styles.container}>
-          <Text type="headline" style={[styles.label, {color}]}>
+          <Text
+            style={[
+              styles.label,
+              {color, fontFamily: fonts['SFProText-Semibold'], fontSize: 17},
+            ]}>
             {label}
           </Text>
         </View>
